@@ -1,7 +1,7 @@
 # liveframe
-Get the lateat frame of a live youtube video
+Get the lateat frame of a live Youtube video
 
-# requirements
+## requirements
 opencv (3.2.0 min)
 
 livestreamer
@@ -11,8 +11,8 @@ sudo pip install livestreamer
 
 <br />
 
-___note: to decode the stream correctly, opencv needs ffmpeg. Sometimes it doesn't link when installing through pip.
-livestreamer doesn't gives any heads up and just fails decoding the frame.___
+___note: to decode the stream correctly, opencv needs ffmpeg. Sometimes it doesn't link when installing through pip.___
+___livestreamer doesn't gives any heads up and just fails decoding the frame.___
 
 <br />
 
@@ -21,3 +21,12 @@ Best approach I found was installing it through your distros package manager
 ```bash
 sudo pacman -S opencv
 ```
+
+## usage
+```bash
+python liveframe.py urltolivestream
+```
+
+This ouputs a file to the scripts directory called 'background.png'
+
+livestreamer automatically pulls the best quality buffer
